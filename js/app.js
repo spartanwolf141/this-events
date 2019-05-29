@@ -41,12 +41,13 @@ for(i=0; i<thumbs.length; i++){
     
     var count = document.createElement('div');
     count.className = 'clicks';
-    count.innerHTML = 'test';
+    //count.innerHTML = 'test';
     thumbs[i].appendChild(count);
 }
 //var clicks = 0;
 
 function dislike(){
-    var hate = this.querySelectorAll('.clicks');
+    var hate = this.querySelector('.clicks');
     hate.innerHTML++;
+    //console.log(hate);
 }
